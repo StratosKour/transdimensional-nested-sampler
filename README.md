@@ -87,7 +87,7 @@ overlapping-source regime rather than false confidence.
 
 ## Usage
 
-The main implementation is `Transnested_Reworked.ipynb`, a step-by-step notebook
+The main implementation is a step-by-step notebook
 covering: the generative toy model and synthetic data injection, the
 `ProbDistContainer` prior setup, the hard-constrained log-likelihood, branch
 structure and live-point initialisation, the core Nested Sampling iteration with
