@@ -53,12 +53,12 @@ versus overlapping pulses. All notebooks include full outputs and diagnostic plo
 
 | Scenario | k_true | SNR | MAP | P(k_true) | log Bayes factor | Notebook |
 |---|---|---|---|---|---|---|
-| Null test | 0 | 0 | 0 ✓ | 0.99 | −4.80 | [Transnested_zero_pulses](./Transnested_zero_pulses.ipynb) |
-| One pulse | 1 | 26.6 | 1 ✓ | 0.75 | +308 | [Transnested_one_pulse](./Transnested_one_pulse.ipynb) |
-| Two pulses, separated | 2 | 38.0 | 2 ✓ | 0.81 | +674 | [Transnested_two_pulses](./Transnested_two_pulses.ipynb) |
-| Two pulses, overlapping | 2 | 12.5 | 2 ✓ | 0.44 | +55 | [Transnested_two_pulses_lowSNR](./Transnested_two_pulses_lowSNR.ipynb) |
-| Two pulses, overlapping (seed 1) | 2 | 12.5 | 2 ✓ | 0.50 | +75 | [..._difseed](./Transnested_two_pulses_lowSNR_difseed.ipynb) |
-| Four pulses, unequal amplitudes | 4 | 75.2 | 4 ✓ | 0.82 | +2825 | [..._more_iterations](./Transnested_four_pulses_more_iterations.ipynb) |
+| Null test | 0 | 0 | 0  | 0.99 | −4.80 | [Transnested_zero_pulses](./Transnested_zero_pulses.ipynb) |
+| One pulse | 1 | 26.6 | 1  | 0.75 | +308 | [Transnested_one_pulse](./Transnested_one_pulse.ipynb) |
+| Two pulses, separated | 2 | 38.0 | 2  | 0.81 | +674 | [Transnested_two_pulses](./Transnested_two_pulses.ipynb) |
+| Two pulses, overlapping | 2 | 12.5 | 2  | 0.44 | +55 | [Transnested_two_pulses_lowSNR](./Transnested_two_pulses_lowSNR.ipynb) |
+| Two pulses, overlapping (seed 1) | 2 | 12.5 | 2  | 0.50 | +75 | [..._difseed](./Transnested_two_pulses_lowSNR_difseed.ipynb) |
+| Four pulses, unequal amplitudes | 4 | 75.2 | 4  | 0.82 | +2825 | [..._more_iterations](./Transnested_four_pulses_more_iterations.ipynb) |
 
 **Notes on the remaining notebooks:**
 - `Transnested_four_pulses.ipynb` uses the default 6000-iteration ceiling and does
