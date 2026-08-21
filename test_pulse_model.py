@@ -19,15 +19,6 @@ Two kinds of check, run one after the other.
    an argument, but matching numbers, for every point tested, with the
    required result being exact equality rather than closeness within some
    tolerance.
-
-    The raw archives and the sweep_results.csv summary from the actual
-    69-configuration production sweep are provided alongside this file
-    specifically so this check runs against genuine data rather than being
-    skipped. find_archives() and find_summary_csv() below look for them in
-    raw_archives/ and sweep_results.csv (or the data_and_results/ equivalents)
-    automatically -- no path needs to be typed in. Run this script from a
-    folder that has that data reachable and the result is not taken on trust:
-    it is computed, in front of whoever runs it.
 """
 
 import os
