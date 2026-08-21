@@ -197,7 +197,7 @@ the only situation, across all 69 tests, where the baseline under-counted.
 ## Limits, honestly
 
 - The pulse width is **fixed**, not fitted — set `pulse_width` to match your
-  data. Pulses of varying width are not supported.
+  data. Pulses of varying width are not supported, for now.
 - The noise level is **assumed known**.
 - The count is capped at `max_pulses`. If the answer piles up at that limit,
   raise it — you'll get a warning if this happens.
