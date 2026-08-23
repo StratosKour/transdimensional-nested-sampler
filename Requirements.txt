@@ -1,0 +1,8 @@
+numpy
+scipy
+pandas
+matplotlib
+eryn
+anesthetic
+corner
+tqdm
