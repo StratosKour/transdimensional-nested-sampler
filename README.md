@@ -280,24 +280,7 @@ result.as_dict()                  # every number above, in one dictionary
   posterior is what tells them apart.
 - If `result.converged` is `False`, the run stopped early rather than
   settling, and `log_evidence` is a lower bound rather than a final number.
-
----
-
-## Why 10 temperatures for one sampler and 1 for the other
-
-The Nested Sampler needs only a single internal temperature: its shrinking
-likelihood constraint already does the job parallel tempering is for. Plain
-RJ-MCMC has no equivalent mechanism, so it depends on the ladder. Measured
-directly, at high signal-to-noise, changing nothing else:
-
-| | agreement with the truth |
-|---|---|
-| RJ-MCMC, 1 temperature | wrong by 3 pulses |
-| RJ-MCMC, 10 temperatures | correct |
-| Nested Sampler (always 1 temperature) | correct |
-
-Running with `rjmcmc_temperatures=1` reproduces that failure, and prints a
-warning saying so.
+<img width="1471" height="606" alt="fig02_model_order_error" src="https://github.com/user-attachments/assets/8abc1d3f-953b-4517-814d-7bdfe1c07aef" />
 
 ---
 
@@ -346,6 +329,11 @@ The one place a real difference showed up: when two pulses were very close
 together (about half a pulse-width apart), the Nested Sampler told them apart
 correctly every time, and the RJ-MCMC baseline merged them into one. That is
 the only situation, across all 69 tests, where the baseline under-counted.
+
+<img width="1461" height="688" alt="fig01_model_order_confusion" src="https://github.com/user-attachments/assets/43661390-93a2-4954-b1d8-cd2c4319b1b8" />
+
+![Uploading fig02_model_order_error.png…]()
+
 
 ---
 
