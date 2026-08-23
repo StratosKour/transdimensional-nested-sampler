@@ -280,7 +280,6 @@ result.as_dict()                  # every number above, in one dictionary
   posterior is what tells them apart.
 - If `result.converged` is `False`, the run stopped early rather than
   settling, and `log_evidence` is a lower bound rather than a final number.
-<img width="1471" height="606" alt="fig02_model_order_error" src="https://github.com/user-attachments/assets/8abc1d3f-953b-4517-814d-7bdfe1c07aef" />
 
 ---
 
@@ -332,7 +331,7 @@ the only situation, across all 69 tests, where the baseline under-counted.
 
 <img width="1461" height="688" alt="fig01_model_order_confusion" src="https://github.com/user-attachments/assets/43661390-93a2-4954-b1d8-cd2c4319b1b8" />
 
-![Uploading fig02_model_order_error.png…]()
+<img width="1471" height="606" alt="fig02_model_order_error" src="https://github.com/user-attachments/assets/62ec8f55-14b6-4d2c-a104-6c5c8cc84aa4" />
 
 
 ---
